@@ -7,22 +7,30 @@ public class BallLauncher : MonoBehaviour {
 
 	SteamVR_TrackedObject trackedObject;
 	SteamVR_Controller.Device device;
-	GameObject temp;
+	GameObject ball;
 	GameObject launchPad;
-	Vector3 position;
+	Vector3 position, velocity;
+	AudioSource audio;
+	public AudioClip pitch;
 
 	void Awake () {
+		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 		trackedObject = this.gameObject.GetComponent<SteamVR_TrackedObject>();
 		launchPad = GameObject.Find ("Launch Pad");
 	}
 
 	void FixedUpdate () {
+		
 		device = SteamVR_Controller.Input ((int)trackedObject.index);
+		velocity = device.velocity;
 		position = launchPad.transform.position;
 
 		if (device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {
-			temp = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
-			temp.GetComponent<Rigidbody> ().AddForce (transform.forward * 300f);
+			audio.clip = pitch;
+			audio.Play ();
+			ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
+			ball.GetComponent<Rigidbody> ().AddForce (transform.forward * 350f);
+
 		}
 	}
 
