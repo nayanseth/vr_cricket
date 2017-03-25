@@ -9,7 +9,8 @@ public class BallLauncher : MonoBehaviour {
 	SteamVR_Controller.Device device;
 	GameObject ball;
 	GameObject launchPad;
-	Vector3 position, velocity;
+	Vector3 position;
+	public Vector3 velocity;
 	AudioSource audio;
 	public AudioClip pitch;
 

@@ -6,8 +6,15 @@ public class BallPath : MonoBehaviour {
 
 	public AudioClip shot;
 	AudioSource audio;
+	BallLauncher controller;
+	Vector3 velocity;
+
+	Rigidbody batRigidBody;
+
 	void Start() {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
+		controller = GameObject.Find ("Controller (right)").GetComponent<BallLauncher> ();
+		batRigidBody = this.gameObject.GetComponent<Rigidbody> ();
 	}
 
 	void OnCollisionEnter(Collision other){
@@ -15,9 +22,13 @@ public class BallPath : MonoBehaviour {
 
 		if(other.gameObject.tag=="Ball") {
 			audio.Play ();
-			GameObject.Find ("Controller (right)").GetComponent<BallLauncher>().flag = true;
+			controller.flag = true;
+			velocity = controller.velocity;
+			//batRigidBody.MovePosition (batRigidBody.position + transform.rotation * new Vector3 (velocity.x, velocity.y, velocity.z));
+
+			other.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3(velocity.x,velocity.y,velocity.z), ForceMode.Impulse);
 
 		}
-	
+
 	}
 }
