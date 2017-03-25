@@ -16,7 +16,7 @@ public class BallPath : MonoBehaviour {
 
 	void Start() {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
-		controller = GameObject.Find ("Controller (right)").GetComponent<BallLauncher> ();
+		controller = GameObject.Find ("Managers").GetComponent<BallLauncher> ();
 		batRigidBody = this.gameObject.GetComponent<Rigidbody> ();
 		scoreText = GameObject.Find ("Score").GetComponent<Text>();
 	}
