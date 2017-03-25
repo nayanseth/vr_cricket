@@ -1,0 +1,232 @@
+fileFormatVersion: 2
+guid: f1d64d1ea71f6724d882c28f496682cd
+timeCreated: 1490442652
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Batting Crease
+    100002: Batting Leg Stump Crease
+    100004: Batting Off Stump Crease
+    100006: Batting Stump  Crease
+    100008: Boundary
+    100010: Bowling Crease
+    100012: Bowling Leg Stump Crease
+    100014: Bowling Off Stump Crease
+    100016: Bowling Stump Crease
+    100018: Box Seat Gap  B
+    100020: Box Seat Gap A
+    100022: Box Seats
+    100024: Box Seats Back
+    100026: Box Seats Holder
+    100028: Box Seats Holder Back
+    100030: Gap A
+    100032: Gap B
+    100034: Gap C
+    100036: Gap D
+    100038: Pitch
+    100040: //RootNode
+    100042: Stand
+    100044: Stand A Lower
+    100046: Stand A Upper
+    100048: Stand B Lower
+    100050: Stand B Upper
+    100052: Stand C Lower
+    100054: Stand C Upper
+    100056: Stand D Lower
+    100058: Stand D Upper
+    100060: Stand E Lower
+    100062: Stand E Upper
+    400000: Batting Crease
+    400002: Batting Leg Stump Crease
+    400004: Batting Off Stump Crease
+    400006: Batting Stump  Crease
+    400008: Boundary
+    400010: Bowling Crease
+    400012: Bowling Leg Stump Crease
+    400014: Bowling Off Stump Crease
+    400016: Bowling Stump Crease
+    400018: Box Seat Gap  B
+    400020: Box Seat Gap A
+    400022: Box Seats
+    400024: Box Seats Back
+    400026: Box Seats Holder
+    400028: Box Seats Holder Back
+    400030: Gap A
+    400032: Gap B
+    400034: Gap C
+    400036: Gap D
+    400038: Pitch
+    400040: //RootNode
+    400042: Stand
+    400044: Stand A Lower
+    400046: Stand A Upper
+    400048: Stand B Lower
+    400050: Stand B Upper
+    400052: Stand C Lower
+    400054: Stand C Upper
+    400056: Stand D Lower
+    400058: Stand D Upper
+    400060: Stand E Lower
+    400062: Stand E Upper
+    2300000: Batting Crease
+    2300002: Batting Leg Stump Crease
+    2300004: Batting Off Stump Crease
+    2300006: Batting Stump  Crease
+    2300008: Boundary
+    2300010: Bowling Crease
+    2300012: Bowling Leg Stump Crease
+    2300014: Bowling Off Stump Crease
+    2300016: Bowling Stump Crease
+    2300018: Box Seat Gap  B
+    2300020: Box Seat Gap A
+    2300022: Box Seats
+    2300024: Box Seats Back
+    2300026: Box Seats Holder
+    2300028: Box Seats Holder Back
+    2300030: Gap A
+    2300032: Gap B
+    2300034: Gap C
+    2300036: Gap D
+    2300038: Pitch
+    2300040: Stand
+    2300042: Stand A Lower
+    2300044: Stand A Upper
+    2300046: Stand B Lower
+    2300048: Stand B Upper
+    2300050: Stand C Lower
+    2300052: Stand C Upper
+    2300054: Stand D Lower
+    2300056: Stand D Upper
+    2300058: Stand E Lower
+    2300060: Stand E Upper
+    3300000: Batting Crease
+    3300002: Batting Leg Stump Crease
+    3300004: Batting Off Stump Crease
+    3300006: Batting Stump  Crease
+    3300008: Boundary
+    3300010: Bowling Crease
+    3300012: Bowling Leg Stump Crease
+    3300014: Bowling Off Stump Crease
+    3300016: Bowling Stump Crease
+    3300018: Box Seat Gap  B
+    3300020: Box Seat Gap A
+    3300022: Box Seats
+    3300024: Box Seats Back
+    3300026: Box Seats Holder
+    3300028: Box Seats Holder Back
+    3300030: Gap A
+    3300032: Gap B
+    3300034: Gap C
+    3300036: Gap D
+    3300038: Pitch
+    3300040: Stand
+    3300042: Stand A Lower
+    3300044: Stand A Upper
+    3300046: Stand B Lower
+    3300048: Stand B Upper
+    3300050: Stand C Lower
+    3300052: Stand C Upper
+    3300054: Stand D Lower
+    3300056: Stand D Upper
+    3300058: Stand E Lower
+    3300060: Stand E Upper
+    4300000: Bowling Off Stump Crease
+    4300002: Bowling Leg Stump Crease
+    4300004: Bowling Stump Crease
+    4300006: Bowling Crease
+    4300008: Batting Stump  Crease
+    4300010: Batting Off Stump Crease
+    4300012: Batting Leg Stump Crease
+    4300014: Batting Crease
+    4300016: Pitch
+    4300018: Box Seats Back
+    4300020: Box Seat Gap  B
+    4300022: Gap D
+    4300024: Gap C
+    4300026: Gap B
+    4300028: Gap A
+    4300030: Box Seat Gap A
+    4300032: Stand E Lower
+    4300034: Stand E Upper
+    4300036: Stand D Lower
+    4300038: Stand D Upper
+    4300040: Stand C Lower
+    4300042: Stand C Upper
+    4300044: Boundary
+    4300046: Stand B Lower
+    4300048: Stand B Upper
+    4300050: Box Seats Holder Back
+    4300052: Box Seats Holder
+    4300054: Stand A Lower
+    4300056: Stand A Upper
+    4300058: Box Seats
+    4300060: Stand
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

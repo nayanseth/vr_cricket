@@ -31,7 +31,7 @@ public class BallLauncher : MonoBehaviour {
 			audio.clip = pitch;
 			audio.Play ();
 			ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
-			ball.GetComponent<Rigidbody> ().AddForce (transform.forward * 350f);
+			ball.GetComponent<Rigidbody> ().AddForce (/*launchPad.transform.forward*/transform.forward * 500f);
 
 		}
 
