@@ -5,7 +5,9 @@ using UnityEngine;
 public class StumpsManager : MonoBehaviour {
 	public AudioClip stumps;
 	AudioSource audio;
-	// Use this for initialization
+
+
+
 	void Start () {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 	}
@@ -14,6 +16,10 @@ public class StumpsManager : MonoBehaviour {
 		if (other.gameObject.tag == "Ball" || other.gameObject.tag == "Bat") {
 			audio.clip = stumps;
 			audio.Play ();
+			GameObject.Find ("Managers").GetComponent<GameObjectManager> ().destroyMe = true;
+			GameObject.Find ("Managers").GetComponent<ScoreManager> ().score = 0;
 		}
 	}
+
+
 }

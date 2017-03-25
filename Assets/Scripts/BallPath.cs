@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallPath : MonoBehaviour {
 
+	Text scoreText;
+	int score;
 	public AudioClip shot;
 	AudioSource audio;
 	BallLauncher controller;
@@ -15,12 +18,18 @@ public class BallPath : MonoBehaviour {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 		controller = GameObject.Find ("Controller (right)").GetComponent<BallLauncher> ();
 		batRigidBody = this.gameObject.GetComponent<Rigidbody> ();
+		scoreText = GameObject.Find ("Score").GetComponent<Text>();
 	}
 
 	void OnCollisionEnter(Collision other){
 		audio.clip = shot;
 
 		if(other.gameObject.tag=="Ball") {
+
+			score = ++GameObject.Find ("Managers").GetComponent<ScoreManager> ().score;
+			scoreText.text = score.ToString (); 
+
+
 			audio.Play ();
 			controller.flag = true;
 			velocity = controller.velocity;
