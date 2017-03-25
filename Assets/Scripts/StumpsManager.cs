@@ -17,7 +17,7 @@ public class StumpsManager : MonoBehaviour {
 			audio.clip = stumps;
 			audio.Play ();
 			GameObject.Find ("Managers").GetComponent<GameObjectManager> ().destroyMe = true;
-			GameObject.Find ("Managers").GetComponent<ScoreManager> ().score = 0;
+			GameObject.Find ("Managers").GetComponent<VariableManager> ().score = 0;
 		}
 	}
 

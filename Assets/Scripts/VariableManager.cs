@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreManager : MonoBehaviour {
+public class VariableManager : MonoBehaviour {
 	public int score;
+	public int ballCount;
 
 	void Start () {
 		score = 0;
+		ballCount = 0;
 	}
 }

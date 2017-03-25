@@ -26,12 +26,12 @@ public class BallPath : MonoBehaviour {
 
 		if(other.gameObject.tag=="Ball") {
 
-			score = ++GameObject.Find ("Managers").GetComponent<ScoreManager> ().score;
+			score = ++GameObject.Find ("Managers").GetComponent<VariableManager> ().score;
 			scoreText.text = score.ToString (); 
 
 
 			audio.Play ();
-			controller.flag = true;
+			controller.hapticFeedbackFlag = true;
 			velocity = controller.velocity;
 			//batRigidBody.MovePosition (batRigidBody.position + transform.rotation * new Vector3 (velocity.x, velocity.y, velocity.z));
 
