@@ -11,7 +11,7 @@ public class StumpsManager : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter(Collision other) {
-		if (other.gameObject.tag == "Ball") {
+		if (other.gameObject.tag == "Ball" || other.gameObject.tag == "Bat") {
 			audio.clip = stumps;
 			audio.Play ();
 		}
