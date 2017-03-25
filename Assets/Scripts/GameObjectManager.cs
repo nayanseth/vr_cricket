@@ -24,6 +24,6 @@ public class GameObjectManager : MonoBehaviour {
 
 		GameObject temp = Instantiate (Resources.Load ("Prefabs/Stumps")) as GameObject;
 		temp.name = "Stumps";
-
+		temp.transform.SetParent (GameObject.Find("Pitch").transform);
 	}
 }
