@@ -5,11 +5,12 @@ using UnityEngine;
 public class StumpsManager : MonoBehaviour {
 	public AudioClip stumps;
 	AudioSource audio;
-
+	VariableManager vm;
 
 
 	void Start () {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
+		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
 	}
 	
 	void OnCollisionEnter(Collision other) {
@@ -17,7 +18,9 @@ public class StumpsManager : MonoBehaviour {
 			audio.clip = stumps;
 			audio.Play ();
 			GameObject.Find ("Managers").GetComponent<GameObjectManager> ().destroyMe = true;
-			GameObject.Find ("Managers").GetComponent<VariableManager> ().score = 0;
+			vm.SetScoreCount(0);
+			vm.SetBallCount (0);
+			vm.SetBouncerCount (0);
 		}
 	}
 

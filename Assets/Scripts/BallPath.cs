@@ -1,33 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class BallPath : MonoBehaviour {
 
-	Text scoreText;
 	int score;
 	public AudioClip shot;
 	AudioSource audio;
 	BallLauncher controller;
 	Vector3 velocity;
-
+	VariableManager vm;
 	Rigidbody batRigidBody;
+	TextManager tm;
 
 	void Start() {
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 		controller = GameObject.Find ("Managers").GetComponent<BallLauncher> ();
 		batRigidBody = this.gameObject.GetComponent<Rigidbody> ();
-		scoreText = GameObject.Find ("Score").GetComponent<Text>();
+		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
+		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
 	}
 
 	void OnCollisionEnter(Collision other){
 		audio.clip = shot;
 
 		if(other.gameObject.tag=="Ball") {
-
-			score = ++GameObject.Find ("Managers").GetComponent<VariableManager> ().score;
-			scoreText.text = score.ToString (); 
 
 
 			audio.Play ();
@@ -37,6 +34,10 @@ public class BallPath : MonoBehaviour {
 
 			other.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3(velocity.x,velocity.y,velocity.z), ForceMode.Impulse);
 
+			score = vm.GetScoreCount();
+			vm.SetScoreCount (++score);
+			tm.SetScoreText (score.ToString ());
+			tm.SetNRRText(vm.GetNRR().ToString());
 		}
 
 	}
