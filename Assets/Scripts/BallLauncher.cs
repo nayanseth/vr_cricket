@@ -35,15 +35,24 @@ public class BallLauncher : MonoBehaviour {
 				audio.clip = pitch;
 				audio.Play ();
 				ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
-				randomZ = UnityEngine.Random.Range(-3f,-1f);
+				randomZ = UnityEngine.Random.Range(-2f,-1f);
 				randomX = UnityEngine.Random.Range(0f,0.06f);
+				randomY = -0.1f;
+				if(randomZ<-1f && randomZ>=-1.3f){
+					randomY = UnityEngine.Random.Range(-0.35f,-0.1f);
+					if(randomY<=-0.3f && randomY>=-0.35f) {
+						forceMultiplier = UnityEngine.Random.Range(450f,500f);
+					} else {
+						// Slow Bouncer and Good Length
+						forceMultiplier = UnityEngine.Random.Range(500f,600f);
+					}
 
-				if(randomZ>-2f){
-					randomY = UnityEngine.Random.Range(-0.199f,-0.1f);
-					forceMultiplier = 500f;
-				} else {
-					randomY = UnityEngine.Random.Range(-0.3f,-0.2f);
-					forceMultiplier = 250f;
+				} else if(randomZ<-1.3f && randomZ>=-1.6f) {
+					// Full Length
+					forceMultiplier = UnityEngine.Random.Range(350f,400f);
+				} else if(randomZ<-1.6 && randomZ>=-2f) {
+					// Yorker
+					forceMultiplier = UnityEngine.Random.Range(350f,400f);
 				}
 				ball.GetComponent<Rigidbody> ().AddForce (new Vector3(randomX,randomY,randomZ) * forceMultiplier);
 				//ball.GetComponent<Rigidbody> ().AddForce (controller.transform.forward/*new Vector3(randomX,0,randomZ)*/ * 500f);
