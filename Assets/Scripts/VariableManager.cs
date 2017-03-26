@@ -6,11 +6,21 @@ using System;
 public class VariableManager : MonoBehaviour {
 	int score, ballCount, bouncerCount;
 	float nrr;
+	bool playFireworks;
 
 	void Start () {
 		score = 0;
 		ballCount = 0;
 		bouncerCount = 0;
+		playFireworks = false;
+	}
+
+	public bool GetPlayFireworksFlag() {
+		return playFireworks;
+	}
+
+	public void SetPlayFireworksFlag(bool value){
+		playFireworks = value;
 	}
 
 	public int GetBallCount (){

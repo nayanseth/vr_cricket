@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 04203740623198f4aa4df2b050e38d13
+timeCreated: 1490536975
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Batting_Crease
+    100002: Batting_Leg_Stump_Crease
+    100004: Batting_Off_Stump_Crease
+    100006: Batting_Stump__Crease
+    100008: Boundary
+    100010: Bowling_Crease
+    100012: Bowling_Leg_Stump_Crease
+    100014: Bowling_Off_Stump_Crease
+    100016: Bowling_Stump_Crease
+    100018: Box_Seat_Gap__B
+    100020: Box_Seat_Gap_A
+    100022: Box_Seats
+    100024: Box_Seats_Back
+    100026: Box_Seats_Holder
+    100028: Box_Seats_Holder_Back
+    100030: Gap_A
+    100032: Gap_B
+    100034: Gap_C
+    100036: Gap_D
+    100038: Pitch
+    100040: //RootNode
+    100042: Stand
+    100044: Stand_A_Lower
+    100046: Stand_A_Upper
+    100048: Stand_B_Lower
+    100050: Stand_B_Upper
+    100052: Stand_C_Lower
+    100054: Stand_C_Upper
+    100056: Stand_D_Lower
+    100058: Stand_D_Upper
+    100060: Stand_E_Lower
+    100062: Stand_E_Upper
+    400000: Batting_Crease
+    400002: Batting_Leg_Stump_Crease
+    400004: Batting_Off_Stump_Crease
+    400006: Batting_Stump__Crease
+    400008: Boundary
+    400010: Bowling_Crease
+    400012: Bowling_Leg_Stump_Crease
+    400014: Bowling_Off_Stump_Crease
+    400016: Bowling_Stump_Crease
+    400018: Box_Seat_Gap__B
+    400020: Box_Seat_Gap_A
+    400022: Box_Seats
+    400024: Box_Seats_Back
+    400026: Box_Seats_Holder
+    400028: Box_Seats_Holder_Back
+    400030: Gap_A
+    400032: Gap_B
+    400034: Gap_C
+    400036: Gap_D
+    400038: Pitch
+    400040: //RootNode
+    400042: Stand
+    400044: Stand_A_Lower
+    400046: Stand_A_Upper
+    400048: Stand_B_Lower
+    400050: Stand_B_Upper
+    400052: Stand_C_Lower
+    400054: Stand_C_Upper
+    400056: Stand_D_Lower
+    400058: Stand_D_Upper
+    400060: Stand_E_Lower
+    400062: Stand_E_Upper
+    2300000: Batting_Crease
+    2300002: Batting_Leg_Stump_Crease
+    2300004: Batting_Off_Stump_Crease
+    2300006: Batting_Stump__Crease
+    2300008: Boundary
+    2300010: Bowling_Crease
+    2300012: Bowling_Leg_Stump_Crease
+    2300014: Bowling_Off_Stump_Crease
+    2300016: Bowling_Stump_Crease
+    2300018: Box_Seat_Gap__B
+    2300020: Box_Seat_Gap_A
+    2300022: Box_Seats
+    2300024: Box_Seats_Back
+    2300026: Box_Seats_Holder
+    2300028: Box_Seats_Holder_Back
+    2300030: Gap_A
+    2300032: Gap_B
+    2300034: Gap_C
+    2300036: Gap_D
+    2300038: Pitch
+    2300040: Stand
+    2300042: Stand_A_Lower
+    2300044: Stand_A_Upper
+    2300046: Stand_B_Lower
+    2300048: Stand_B_Upper
+    2300050: Stand_C_Lower
+    2300052: Stand_C_Upper
+    2300054: Stand_D_Lower
+    2300056: Stand_D_Upper
+    2300058: Stand_E_Lower
+    2300060: Stand_E_Upper
+    3300000: Batting_Crease
+    3300002: Batting_Leg_Stump_Crease
+    3300004: Batting_Off_Stump_Crease
+    3300006: Batting_Stump__Crease
+    3300008: Boundary
+    3300010: Bowling_Crease
+    3300012: Bowling_Leg_Stump_Crease
+    3300014: Bowling_Off_Stump_Crease
+    3300016: Bowling_Stump_Crease
+    3300018: Box_Seat_Gap__B
+    3300020: Box_Seat_Gap_A
+    3300022: Box_Seats
+    3300024: Box_Seats_Back
+    3300026: Box_Seats_Holder
+    3300028: Box_Seats_Holder_Back
+    3300030: Gap_A
+    3300032: Gap_B
+    3300034: Gap_C
+    3300036: Gap_D
+    3300038: Pitch
+    3300040: Stand
+    3300042: Stand_A_Lower
+    3300044: Stand_A_Upper
+    3300046: Stand_B_Lower
+    3300048: Stand_B_Upper
+    3300050: Stand_C_Lower
+    3300052: Stand_C_Upper
+    3300054: Stand_D_Lower
+    3300056: Stand_D_Upper
+    3300058: Stand_E_Lower
+    3300060: Stand_E_Upper
+    4300000: Bowling_Off_Stump_Crease
+    4300002: Bowling_Leg_Stump_Crease
+    4300004: Bowling_Stump_Crease
+    4300006: Bowling_Crease
+    4300008: Batting_Stump__Crease
+    4300010: Batting_Off_Stump_Crease
+    4300012: Batting_Leg_Stump_Crease
+    4300014: Batting_Crease
+    4300016: Pitch
+    4300018: Box_Seats_Back
+    4300020: Box_Seat_Gap__B
+    4300022: Gap_D
+    4300024: Gap_C
+    4300026: Gap_B
+    4300028: Gap_A
+    4300030: Box_Seat_Gap_A
+    4300032: Stand_E_Lower
+    4300034: Stand_E_Upper
+    4300036: Stand_D_Lower
+    4300038: Stand_D_Upper
+    4300040: Stand_C_Lower
+    4300042: Stand_C_Upper
+    4300044: Boundary
+    4300046: Stand_B_Lower
+    4300048: Stand_B_Upper
+    4300050: Box_Seats_Holder_Back
+    4300052: Box_Seats_Holder
+    4300054: Stand_A_Lower
+    4300056: Stand_A_Upper
+    4300058: Box_Seats
+    4300060: Stand
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -17,7 +17,7 @@ public class BallManager : MonoBehaviour {
 		vm = GameObject.Find("Managers").GetComponent<VariableManager> ();
 		tm = GameObject.Find("Managers").GetComponent<TextManager> ();
 		trail = this.gameObject.GetComponent<TrailRenderer> ();
-		Destroy (this.gameObject, 5f);
+		Destroy (this.gameObject, 8f);
 
 	}
 
@@ -30,6 +30,7 @@ public class BallManager : MonoBehaviour {
 			if (ballBounceCount > 0) {
 				score += 3;
 			} else {
+				vm.SetPlayFireworksFlag (true);
 				score += 5;
 			}
 
