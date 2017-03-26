@@ -50,6 +50,7 @@ public class GetName : MonoBehaviour {
 		}
 
 		if (addText) {
+			str = str.Trim ();
 			nameText.text += str;
 		}
 	}

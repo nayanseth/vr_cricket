@@ -43,12 +43,14 @@ public class BallLauncher : MonoBehaviour {
 			position = launchPad.transform.position;
 
 			if (device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {
+				vm.SetBatHitFlag(false);
+				vm.SetBallBounceCount(0);
 				audio.clip = pitch;
 				audio.Play ();
 				ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
 
 				randomX = UnityEngine.Random.Range(-0.02f,0.06f);
-				randomY = -0.1f;
+				randomY = -0.1f; //UnityEngine.Random.Range(-0.3f,-0.1f);
 				randomZ = -2f;
 
 				if(vm.GetBouncerCount()<3) {

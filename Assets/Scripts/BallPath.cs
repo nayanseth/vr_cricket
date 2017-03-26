@@ -31,7 +31,7 @@ public class BallPath : MonoBehaviour {
 			controller.hapticFeedbackFlag = true;
 			velocity = controller.velocity;
 			//batRigidBody.MovePosition (batRigidBody.position + transform.rotation * new Vector3 (velocity.x, velocity.y, velocity.z));
-
+			vm.SetBatHitFlag(true);
 			other.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3(velocity.x,velocity.y,velocity.z), ForceMode.Impulse);
 
 			score = vm.GetScoreCount();

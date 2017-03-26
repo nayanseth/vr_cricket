@@ -6,28 +6,19 @@ using System;
 public class VariableManager : MonoBehaviour {
 	int score, ballCount, bouncerCount;
 	float nrr;
-	string name;
-	PlayerManager pm;
-	TextManager tm;
+	public int ballBounceCount;
+	public bool batHit;
+	public bool boundaryFlag;
+
 	void Start () {
-
-		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
-
-		try{
-			
-			pm = GameObject.Find ("Player Manager").GetComponent<PlayerManager> ();
-			name = pm.GetName ();
-			print(name);
-			tm.SetNameText ("Hi " + name);
-
-		} catch (NullReferenceException e) {
-			print ("Name could not be loaded");
-		}
-
+		boundaryFlag = false;
+		batHit = false;
 		score = 0;
 		ballCount = 0;
 		bouncerCount = 0;
+		ballBounceCount = 0;
 	}
+
 
 	public int GetBallCount (){
 		return ballCount;
@@ -64,6 +55,30 @@ public class VariableManager : MonoBehaviour {
 		nrr = expectedRuns / (newBallCount / 6);
 		//print (nrr);
 		return nrr;
+	}
+
+	public bool GetBoundaryFlag() {
+		return boundaryFlag;
+	}
+
+	public void SetBoundaryFlag(bool flag) {
+		boundaryFlag = flag;
+	}
+
+	public bool GetBatHitFlag() {
+		return batHit;
+	}
+
+	public void SetBatHitFlag(bool flag) {
+		batHit = flag;
+	}
+
+	public int GetBallBounceCount() {
+		return ballBounceCount;
+	}
+
+	public void SetBallBounceCount(int value) {
+		ballBounceCount = value;
 	}
 
 }
