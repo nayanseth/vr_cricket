@@ -1,11 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class VariableManager : MonoBehaviour {
-	public int score, ballCount, bouncerCount;
-	public float nrr;
+	int score, ballCount, bouncerCount;
+	float nrr;
+	string name;
+	PlayerManager pm;
+	TextManager tm;
 	void Start () {
+
+		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
+
+		try{
+			
+			pm = GameObject.Find ("Player Manager").GetComponent<PlayerManager> ();
+			name = pm.GetName ();
+			print(name);
+			tm.SetNameText ("Hi " + name);
+
+		} catch (NullReferenceException e) {
+			print ("Name could not be loaded");
+		}
+
 		score = 0;
 		ballCount = 0;
 		bouncerCount = 0;

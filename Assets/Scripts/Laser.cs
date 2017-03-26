@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class Laser : MonoBehaviour
 {
 
 	LineRenderer line;
 	public GameObject target;
-
+	SteamVR_Controller.Device device;
+	GetName character;
 	// Use this for initialization
 	void Start()
 	{
@@ -17,6 +19,7 @@ public class Laser : MonoBehaviour
 		line.SetVertexCount(3);
 		line.SetColors(Color.cyan, Color.cyan);
 		line.SetWidth(0.01f, 0.01f);
+		character = GameObject.Find ("Player Manager").GetComponent<GetName> ();
 	}
 
 	// Update is called once per frame
@@ -31,8 +34,19 @@ public class Laser : MonoBehaviour
 			if (hit.collider)
 			{
 				target = hit.transform.gameObject;
-				//print("Cube found at " + hit.point + "with normal " + hit.normal);
 				line.SetPosition(1, new Vector3(transform.rotation.x, 0, hit.distance));
+				try {
+					device = this.gameObject.GetComponent<ControllerManager> ().device;
+					if(device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {
+						character.GetCharacter(hit.collider.gameObject);
+						device.TriggerHapticPulse(3000);
+					}
+
+				} catch(NullReferenceException e) {
+					print ("Trying to connect to controller");
+				}
+
+
 			}
 		}
 		else
