@@ -25,6 +25,7 @@ public class FireworksManager : MonoBehaviour {
 		if ((milestoneCheck-score<=5 && vm.GetPlayFireworksFlag ()) || (milestoneCheck-score<=5)) {
 			vm.SetPlayFireworksFlag (false);
 			PlayFireworks ();
+			tm.SetMilestoneText (milestoneCheck.ToString() + " Scored");
 			milestoneCheck += 50;
 
 		} else if (vm.GetPlayFireworksFlag ()) {

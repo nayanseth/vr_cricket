@@ -17,5 +17,6 @@ public class ControllerManager : MonoBehaviour {
 		} catch(NullReferenceException e) {
 			print ("Trying to connect to controller");
 		}
+
 	}
 }
