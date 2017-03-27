@@ -4,9 +4,17 @@ using UnityEngine;
 
 public class DestroySpin : MonoBehaviour {
 
+	VariableManager vm;
+
+	void Start() {
+		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
+	}
+
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Ball") {
-			other.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3(0.001f,0.001f,0.001f);
+		if (other.gameObject.tag == "Ball" && vm.GetSpinBowling() && !vm.GetBatHit()) {
+
+			Destroy (other.gameObject);
+
 		}
 	}
 }

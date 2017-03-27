@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using UnityEngine.UI;
+
 public class SpeedManager : MonoBehaviour {
 	TextManager tm;
 	void Start () {
@@ -10,8 +12,10 @@ public class SpeedManager : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Ball") {
-			tm.SetSpeedText (((int)other.gameObject.GetComponent<Rigidbody>().velocity.magnitude*3.6).ToString() + "Km/hr");
-
+			try {
+				tm.SetSpeedText (((int)other.gameObject.GetComponent<Rigidbody>().velocity.magnitude*3.6).ToString() + "Km/hr");
+			} catch (NullReferenceException e) {
+			}
 		}
 
 		Destroy (this.gameObject.GetComponent<SpeedManager>());
