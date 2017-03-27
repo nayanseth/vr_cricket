@@ -22,8 +22,9 @@ public class BallLauncher : MonoBehaviour {
 	TextManager tm;
 
 	int ballCount, bouncerCount;
-
+	SetBowlingText sbt;
 	void Awake () {
+		sbt = GameObject.Find ("Managers").GetComponent<SetBowlingText> ();
 		hapticFeedbackFlag = false;
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 		launchPad = GameObject.Find ("Launch Pad");
@@ -105,7 +106,6 @@ public class BallLauncher : MonoBehaviour {
 				vm.SetBallCount(++ballCount);
 
 
-
 				if(vm.GetBallCount()%6==0) {
 					if(vm.GetFastSpin()) {
 						bool temp = vm.GetFastBowling();
@@ -114,6 +114,8 @@ public class BallLauncher : MonoBehaviour {
 						temp = vm.GetSpinBowling();
 						temp = !temp;
 						vm.SetSpinBowling(temp);
+
+						sbt.SetText();
 					}
 					vm.SetBouncerCount(0);
 				}

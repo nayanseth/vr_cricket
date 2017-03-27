@@ -7,15 +7,27 @@ public class FireworksManager : MonoBehaviour {
 	public AudioClip fireworks;
 	AudioSource audio;
 	VariableManager vm;
+	int score;
+	int milestoneCheck;
+
+	TextManager tm;
 	// Use this for initialization
 	void Start () {
+		milestoneCheck = 50;
 		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
+		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (vm.GetPlayFireworksFlag ()) {
+		score = vm.GetScoreCount ();
+		if ((milestoneCheck-score<=5 && vm.GetPlayFireworksFlag ()) || (milestoneCheck-score<=5)) {
+			vm.SetPlayFireworksFlag (false);
+			PlayFireworks ();
+			milestoneCheck += 50;
+
+		} else if (vm.GetPlayFireworksFlag ()) {
 			vm.SetPlayFireworksFlag (false);
 			PlayFireworks ();
 		}

@@ -10,6 +10,7 @@ public class BallManager : MonoBehaviour {
 	float distance;
 	VariableManager vm;
 	TextManager tm;
+	string[] commentary = { "Incredible Shot", "Whoosh", "WOW!", "Amazing Shot" };
 	// Use this for initialization
 	void Start () {
 		batHitFlag = false;
@@ -35,7 +36,8 @@ public class BallManager : MonoBehaviour {
 			}
 
 			vm.SetScoreCount (score);
-			tm.SetScoreText (score.ToString());
+			tm.SetScoreText (score.ToString ());
+			tm.SetCommentaryText (commentary[UnityEngine.Random.Range(0,commentary.Length)]);
 		}
 	}
 
