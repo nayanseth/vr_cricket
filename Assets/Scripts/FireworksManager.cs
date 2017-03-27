@@ -9,7 +9,7 @@ public class FireworksManager : MonoBehaviour {
 	VariableManager vm;
 	int score;
 	int milestoneCheck;
-
+	int check;
 	TextManager tm;
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,8 @@ public class FireworksManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		score = vm.GetScoreCount ();
-		if ((milestoneCheck-score<=5 && vm.GetPlayFireworksFlag ()) || (milestoneCheck-score<=5)) {
+		check = score - milestoneCheck;
+		if (((check<=5 && check>=0) && vm.GetPlayFireworksFlag ()) || (check<=5 && check>=0)) {
 			vm.SetPlayFireworksFlag (false);
 			PlayFireworks ();
 			tm.SetMilestoneText (milestoneCheck.ToString() + " Scored");
