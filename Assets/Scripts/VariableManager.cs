@@ -6,13 +6,32 @@ using System;
 public class VariableManager : MonoBehaviour {
 	int score, ballCount, bouncerCount;
 	float nrr;
-	bool playFireworks;
+	bool playFireworks, fastBowling, batHit;
 
 	void Start () {
+		batHit = false;
 		score = 0;
 		ballCount = 0;
 		bouncerCount = 0;
 		playFireworks = false;
+	}
+
+
+
+	public bool GetBatHit() {
+		return batHit;
+	}
+
+	public void SetBatHit(bool value){
+		batHit = value;
+	}
+
+	public bool GetFastBowling() {
+		return fastBowling;
+	}
+
+	public void SetFastBowling(bool value){
+		fastBowling = value;
 	}
 
 	public bool GetPlayFireworksFlag() {

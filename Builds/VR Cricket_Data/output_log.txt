@@ -21,7 +21,7 @@ Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_
 Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll (this message is harmless)
 Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll into Unity Child Domain
-- Completed reload, in  0.161 seconds
+- Completed reload, in  0.027 seconds
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -32,7 +32,7 @@ OpenVR initialized!
  
 (Filename:  Line: 381)
 
-UnloadTime: 0.426082 ms
+UnloadTime: 0.437479 ms
 Connected to lighthouse:LHR-4F761179
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -42,14 +42,28 @@ Parent of RectTransform is being set with parent property. Consider using the Se
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 27fc -> priority: 1 
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.269883 ms
+  Thread -> id: f48 -> priority: 1 
+Trying to connect to controller
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 776.
-Total: 0.772091 ms (FindLiveObjects: 0.042374 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.349516 ms  DeleteObjects: 0.358283 ms)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.152696 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-nayan
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 600.
+Total: 0.365004 ms (FindLiveObjects: 0.034191 ms CreateObjectMapping: 0.020164 ms MarkObjects: 0.293114 ms  DeleteObjects: 0.017242 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.369972 ms
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 837.
+Total: 0.733224 ms (FindLiveObjects: 0.079488 ms CreateObjectMapping: 0.023379 ms MarkObjects: 0.292822 ms  DeleteObjects: 0.335781 ms)
+
+v
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 

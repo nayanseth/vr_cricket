@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
-	public string name;
+	string name;
 
 	void Start () {
 		DontDestroyOnLoad (transform.gameObject);

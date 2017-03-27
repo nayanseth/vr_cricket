@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class ControllerManager : MonoBehaviour {
 	SteamVR_TrackedObject trackedObject;
@@ -11,7 +12,10 @@ public class ControllerManager : MonoBehaviour {
 		trackedObject = this.gameObject.GetComponent<SteamVR_TrackedObject>();
 	}
 	void FixedUpdate () {
-
-		device = SteamVR_Controller.Input ((int)trackedObject.index);
+		try {
+			device = SteamVR_Controller.Input ((int)trackedObject.index);
+		} catch(NullReferenceException e) {
+			print ("Trying to connect to controller");
+		}
 	}
 }

@@ -1,0 +1,29 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class SpinBall : MonoBehaviour {
+
+	public bool pitchHit;
+	VariableManager vm;
+	BallLauncher bl;
+	void Start () {
+		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
+		pitchHit = false;		
+		bl = GameObject.Find ("Managers").GetComponent<BallLauncher> ();
+	}
+
+	void FixedUpdate() {
+	
+		if (pitchHit && !vm.GetBatHit ()) {
+			if (bl.randomX >= -0.08f && bl.randomX <= -0.04f){
+				this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (0.05f, 0f, 0f) * 1f, ForceMode.Impulse);
+			} else if (bl.randomX >= 0.04f && bl.randomX <= 0.08f){
+				this.gameObject.GetComponent<Rigidbody> ().AddForce (new Vector3 (-0.05f, 0f, 0f) * 1f, ForceMode.Impulse);
+			}
+		} else {
+			pitchHit = false;
+		}
+
+	}
+}

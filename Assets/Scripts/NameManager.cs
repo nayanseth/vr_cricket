@@ -17,10 +17,13 @@ public class NameManager : MonoBehaviour {
 			name = pm.GetName ();
 			print(name);
 			tm.SetNameText ("Hi " + name);
+			Destroy (GameObject.Find ("Player Manager"));
 
 		} catch (NullReferenceException e) {
 			print ("Name could not be loaded");
 		}
 
+
+			
 	}
 }

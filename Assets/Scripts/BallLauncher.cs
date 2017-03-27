@@ -32,6 +32,7 @@ public class BallLauncher : MonoBehaviour {
 		ballCount = vm.GetBallCount ();
 		bouncerCount = vm.GetBouncerCount ();
 		tm = this.gameObject.GetComponent<TextManager> ();
+		position = launchPad.transform.position;
 	}
 
 	void FixedUpdate () {
@@ -40,48 +41,58 @@ public class BallLauncher : MonoBehaviour {
 			velocity = device.velocity;
 		
 
-			position = launchPad.transform.position;
+
 
 			if (device.GetPressDown (SteamVR_Controller.ButtonMask.Trigger)) {
+				vm.SetBatHit(false);
 				audio.clip = pitch;
 				audio.Play ();
 				ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
 
-				randomX = UnityEngine.Random.Range(-0.02f,0.06f);
-				randomY = -0.1f;
-				randomZ = -2f;
 
-				if(vm.GetBouncerCount()<3) {
-					selectedBall = ballType[UnityEngine.Random.Range(0,ballType.Length)];
+				if(vm.GetFastBowling()) {
+
+					randomX = UnityEngine.Random.Range(-0.02f,0.06f);
+					randomY = -0.1f;
+					randomZ = -2f;
+
+					if(vm.GetBouncerCount()<3) {
+						selectedBall = ballType[UnityEngine.Random.Range(0,ballType.Length)];
+					} else {
+						selectedBall = ballType[UnityEngine.Random.Range(0,ballType.Length-1)];
+					}
+					switch(selectedBall) {
+
+					case "Short":
+						randomZ = -1f;
+						forceMultiplier = UnityEngine.Random.Range(500f,600f);
+						break;
+					case "Good":
+						forceMultiplier = UnityEngine.Random.Range(250f,270f);
+						break;
+					case "Full":
+						forceMultiplier = UnityEngine.Random.Range(250f,270f);
+						randomY = UnityEngine.Random.Range(-0.05f,0f);
+						break;
+					case "Yorker":
+						forceMultiplier = UnityEngine.Random.Range(250f,270f);
+						randomY = UnityEngine.Random.Range(0.01f,0.05f);
+						break;
+					case "Bouncer":
+						forceMultiplier = 500f;
+						randomY = UnityEngine.Random.Range(-0.35f,-0.3f);
+						randomZ = -1f;
+						bouncerCount = vm.GetBouncerCount();
+						vm.SetBouncerCount(++bouncerCount);
+						break;
+					}
 				} else {
-					selectedBall = ballType[UnityEngine.Random.Range(0,ballType.Length-1)];
-				}
-				switch(selectedBall) {
-
-				case "Short":
+					ball.AddComponent<SpinBall>();
+					randomX = UnityEngine.Random.Range(-0.08f,0.08f);
+					randomY = UnityEngine.Random.Range(0.12f,0.15f);
 					randomZ = -1f;
-					forceMultiplier = UnityEngine.Random.Range(500f,600f);
-					break;
-				case "Good":
-					forceMultiplier = UnityEngine.Random.Range(250f,280f);
-					break;
-				case "Full":
-					forceMultiplier = UnityEngine.Random.Range(250f,280f);
-					randomY = UnityEngine.Random.Range(-0.05f,0f);
-					break;
-				case "Yorker":
-					forceMultiplier = UnityEngine.Random.Range(250f,280f);
-					randomY = UnityEngine.Random.Range(0.01f,0.05f);
-					break;
-				case "Bouncer":
-					forceMultiplier = 500f;
-					randomY = UnityEngine.Random.Range(-0.35f,-0.3f);
-					randomZ = -1f;
-					bouncerCount = vm.GetBouncerCount();
-					vm.SetBouncerCount(++bouncerCount);
-					break;
+					forceMultiplier = 300f;
 				}
-
 				ballCount = vm.GetBallCount();
 				vm.SetBallCount(++ballCount);
 

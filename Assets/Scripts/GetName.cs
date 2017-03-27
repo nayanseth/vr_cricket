@@ -39,7 +39,7 @@ public class GetName : MonoBehaviour {
 		}else if(charText.text == "CONTINUE") {
 			pm.SetName (nameText.text);
 			addText = false;
-			SceneManager.LoadScene ("Main");
+			SceneManager.LoadScene ("Bowling Info");
 		} else {
 			addText = true;
 		}

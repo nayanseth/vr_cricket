@@ -28,6 +28,9 @@ public class BallPath : MonoBehaviour {
 
 
 			audio.Play ();
+
+			vm.SetBatHit (true);
+
 			controller.hapticFeedbackFlag = true;
 			velocity = controller.velocity;
 			//batRigidBody.MovePosition (batRigidBody.position + transform.rotation * new Vector3 (velocity.x, velocity.y, velocity.z));
