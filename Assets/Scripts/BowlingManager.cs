@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class BowlingManager : MonoBehaviour {
 
-	bool fastBowling;
-
+	bool fastBowling, spinBowling, fastSpin;
 	void Start () {
 		DontDestroyOnLoad (transform.gameObject);
 	}
@@ -16,5 +15,21 @@ public class BowlingManager : MonoBehaviour {
 
 	public bool GetFastBowling(){
 		return fastBowling;
+	}
+
+	public void SetSpinBowling(bool value) {
+		spinBowling = value;
+	}
+
+	public bool GetSpinBowling(){
+		return spinBowling;
+	}
+
+	public void SetFastSpinBowling(bool value) {
+		fastSpin = value;
+	}
+
+	public bool GetFastSpinBowling(){
+		return fastSpin;
 	}
 }

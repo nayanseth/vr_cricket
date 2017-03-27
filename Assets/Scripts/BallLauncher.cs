@@ -88,17 +88,32 @@ public class BallLauncher : MonoBehaviour {
 						vm.SetBouncerCount(++bouncerCount);
 						break;
 					}
-				} else {
+				} 
+
+				if(vm.GetSpinBowling()) {
 					ball.AddComponent<SpinBall>();
 					randomX = UnityEngine.Random.Range(-0.02f,0.04f);
 					randomY = UnityEngine.Random.Range(0.12f,0.15f);
 					randomZ = -1f;
 					forceMultiplier = UnityEngine.Random.Range(300f,320f);
-				}
+				} 
+
+				// Ball Count
+
 				ballCount = vm.GetBallCount();
 				vm.SetBallCount(++ballCount);
 
+
+
 				if(vm.GetBallCount()%6==0) {
+					if(vm.GetFastSpin()) {
+						bool temp = vm.GetFastBowling();
+						temp = !temp;
+						vm.SetFastBowling(temp);
+						temp = vm.GetSpinBowling();
+						temp = !temp;
+						vm.SetSpinBowling(temp);
+					}
 					vm.SetBouncerCount(0);
 				}
 				// Update Scoreboard

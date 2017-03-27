@@ -15,6 +15,11 @@ public class SetBowling : MonoBehaviour {
 
 			bm = GameObject.Find ("Bowling Manager").GetComponent<BowlingManager> ();
 			vm.SetFastBowling(bm.GetFastBowling());
+			vm.SetFastSpin(bm.GetFastSpinBowling());
+			vm.SetSpinBowling(bm.GetSpinBowling());
+			if(bm.GetFastSpinBowling()) {
+				vm.SetFastBowling(true);	// for first over;
+			}
 			Destroy (GameObject.Find ("Bowling Manager"));
 		} catch (NullReferenceException e) {
 			print ("Name could not be loaded");

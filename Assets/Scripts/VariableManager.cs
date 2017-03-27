@@ -6,7 +6,7 @@ using System;
 public class VariableManager : MonoBehaviour {
 	int score, ballCount, bouncerCount;
 	float nrr;
-	bool playFireworks, fastBowling, batHit;
+	bool playFireworks, fastBowling, batHit, fastSpin, spinBowling;
 
 	void Start () {
 		batHit = false;
@@ -15,9 +15,24 @@ public class VariableManager : MonoBehaviour {
 		bouncerCount = 0;
 		playFireworks = false;
 		fastBowling = false;
+		fastSpin = false;
 	}
 
+	public bool GetSpinBowling() {
+		return spinBowling;
+	}
 
+	public void SetSpinBowling(bool value){
+		spinBowling = value;
+	}
+
+	public bool GetFastSpin() {
+		return fastSpin;
+	}
+
+	public void SetFastSpin(bool value){
+		fastSpin = value;
+	}
 
 	public bool GetBatHit() {
 		return batHit;

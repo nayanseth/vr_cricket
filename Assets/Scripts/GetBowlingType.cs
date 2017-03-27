@@ -8,7 +8,7 @@ public class GetBowlingType : MonoBehaviour {
 
 	Text bowlingText;
 	BowlingManager bm;
-	bool fastBowlingFlag;
+	bool fastBowlingFlag, fastSpinFlag, spinBowlingFlag;
 
 	// Use this for initialization
 	void Start () {
@@ -21,11 +21,16 @@ public class GetBowlingType : MonoBehaviour {
 
 		if (bowlingText.text.Trim () == "SPIN") {
 			fastBowlingFlag = false;
+			bm.SetFastBowling (fastBowlingFlag);
 		} else if(bowlingText.text.Trim () == "FAST") {
-			fastBowlingFlag = true;
+			spinBowlingFlag = true;
+			bm.SetSpinBowling (spinBowlingFlag);
+		} else if(bowlingText.text.Trim () == "FAST & SPIN") {
+			fastSpinFlag = true;
+			bm.SetFastSpinBowling (fastSpinFlag);
 		}
 
-		bm.SetFastBowling (fastBowlingFlag);
+
 
 		SceneManager.LoadScene ("Main");
 	
