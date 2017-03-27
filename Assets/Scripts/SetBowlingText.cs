@@ -8,6 +8,7 @@ public class SetBowlingText : MonoBehaviour {
 	VariableManager vm;
 	// Use this for initialization
 	void Start () {
+		
 		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
 		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
 	}

@@ -6,11 +6,13 @@ public class StumpsManager : MonoBehaviour {
 	public AudioClip stumps;
 	AudioSource audio;
 	VariableManager vm;
-
-
+	TextManager tm;
+	FireworksManager fm;
 	void Start () {
+		fm = GameObject.Find ("Managers").GetComponent<FireworksManager> ();
 		audio = GameObject.Find ("Managers").GetComponent<AudioSource> ();
 		vm = GameObject.Find ("Managers").GetComponent<VariableManager> ();
+		tm = GameObject.Find ("Managers").GetComponent<TextManager> ();
 	}
 	
 	void OnCollisionEnter(Collision other) {
@@ -21,6 +23,8 @@ public class StumpsManager : MonoBehaviour {
 			vm.SetScoreCount(0);
 			vm.SetBallCount (0);
 			vm.SetBouncerCount (0);
+			fm.SetMilestoneCheck (50);
+			tm.SetMilestoneText ("Milestone: None");
 		}
 	}
 

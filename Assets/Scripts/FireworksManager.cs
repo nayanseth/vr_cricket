@@ -41,4 +41,8 @@ public class FireworksManager : MonoBehaviour {
 		Instantiate (Resources.Load ("Prefabs/Fireworks Left"));
 	}
 
+	public void SetMilestoneCheck(int value) {
+		milestoneCheck = value;
+	}
+
 }
