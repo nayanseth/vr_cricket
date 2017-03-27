@@ -20,16 +20,23 @@ public class GetBowlingType : MonoBehaviour {
 		bowlingText = bowling.GetComponentInChildren<Text> ();
 
 		if (bowlingText.text.Trim () == "SPIN") {
-			fastBowlingFlag = false;
-			bm.SetFastBowling (fastBowlingFlag);
-		} else if(bowlingText.text.Trim () == "FAST") {
 			spinBowlingFlag = true;
-			bm.SetSpinBowling (spinBowlingFlag);
+			fastBowlingFlag = false;
+			fastSpinFlag = false;
+
+		} else if(bowlingText.text.Trim () == "FAST") {
+			fastBowlingFlag = true;
+			spinBowlingFlag = false;
+			fastSpinFlag = false;
+
 		} else if(bowlingText.text.Trim () == "FAST & SPIN") {
 			fastSpinFlag = true;
-			bm.SetFastSpinBowling (fastSpinFlag);
+			spinBowlingFlag = false;
+			fastBowlingFlag = false;
 		}
-
+		bm.SetFastBowling (fastBowlingFlag);
+		bm.SetSpinBowling (spinBowlingFlag);
+		bm.SetFastSpinBowling (fastSpinFlag);
 
 
 		SceneManager.LoadScene ("Main");

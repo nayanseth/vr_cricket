@@ -22,7 +22,7 @@ public class SetBowling : MonoBehaviour {
 			}
 			Destroy (GameObject.Find ("Bowling Manager"));
 		} catch (NullReferenceException e) {
-			print ("Name could not be loaded");
+			print ("GameObject could not be found");
 			//GameObject.Find ("Managers").RemoveComponent ();
 		}
 

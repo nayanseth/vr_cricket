@@ -21,7 +21,7 @@ Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_
 Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll (this message is harmless)
 Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll into Unity Child Domain
-- Completed reload, in  0.026 seconds
+- Completed reload, in  0.156 seconds
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
@@ -32,7 +32,7 @@ OpenVR initialized!
  
 (Filename:  Line: 381)
 
-UnloadTime: 0.496511 ms
+UnloadTime: 0.537132 ms
 Connected to lighthouse:LHR-4F761179
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -42,32 +42,64 @@ Parent of RectTransform is being set with parent property. Consider using the Se
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 247c -> priority: 1 
+  Thread -> id: 3b0c -> priority: 1 
 Trying to connect to controller
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.154742 ms
+UnloadTime: 4.285372 ms
 Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 611.
-Total: 0.373479 ms (FindLiveObjects: 0.049680 ms CreateObjectMapping: 0.019287 ms MarkObjects: 0.275872 ms  DeleteObjects: 0.028054 ms)
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 624.
+Total: 0.432803 ms (FindLiveObjects: 0.072182 ms CreateObjectMapping: 0.019579 ms MarkObjects: 0.323507 ms  DeleteObjects: 0.016949 ms)
 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.369096 ms
+UnloadTime: 0.359160 ms
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 928.
-Total: 0.744036 ms (FindLiveObjects: 0.040036 ms CreateObjectMapping: 0.022210 ms MarkObjects: 0.301004 ms  DeleteObjects: 0.380201 ms)
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 950.
+Total: 0.742283 ms (FindLiveObjects: 0.039744 ms CreateObjectMapping: 0.022210 ms MarkObjects: 0.342210 ms  DeleteObjects: 0.337826 ms)
 
-nikv
+v
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Trying to connnect to controller!
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OpenVR Shutdown
+ 
+(Filename:  Line: 815)
 

@@ -13,5 +13,7 @@ public class SpeedManager : MonoBehaviour {
 			tm.SetSpeedText (((int)other.gameObject.GetComponent<Rigidbody>().velocity.magnitude*3.6).ToString() + "Km/hr");
 
 		}
+
+		Destroy (this.gameObject.GetComponent<SpeedManager>());
 	}
 }

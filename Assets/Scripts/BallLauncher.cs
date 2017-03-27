@@ -47,6 +47,7 @@ public class BallLauncher : MonoBehaviour {
 				vm.SetBatHit(false);
 				audio.clip = pitch;
 				audio.Play ();
+				GameObject.Find("Speed Trigger").AddComponent<SpeedManager>();
 				ball = Instantiate (Resources.Load ("Prefabs/Cricket Ball"), position, launchPad.transform.rotation) as GameObject;
 
 
