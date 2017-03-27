@@ -52,9 +52,9 @@ public class BallLauncher : MonoBehaviour {
 
 				if(vm.GetFastBowling()) {
 
-					randomX = UnityEngine.Random.Range(-0.02f,0.06f);
-					randomY = -0.1f;
-					randomZ = -2f;
+					randomX = UnityEngine.Random.Range(-0.01f,0.05f);
+					randomY = 0f;
+					randomZ = -1f;
 
 					if(vm.GetBouncerCount()<3) {
 						selectedBall = ballType[UnityEngine.Random.Range(0,ballType.Length)];
@@ -64,23 +64,25 @@ public class BallLauncher : MonoBehaviour {
 					switch(selectedBall) {
 
 					case "Short":
-						randomZ = -1f;
-						forceMultiplier = UnityEngine.Random.Range(500f,600f);
+						randomY = -0.2f;
+						forceMultiplier = UnityEngine.Random.Range(480f,485f);
 						break;
 					case "Good":
-						forceMultiplier = UnityEngine.Random.Range(250f,270f);
+						randomZ = -1.55f;
+						forceMultiplier = UnityEngine.Random.Range(300f,315f);
 						break;
 					case "Full":
-						forceMultiplier = UnityEngine.Random.Range(250f,270f);
-						randomY = UnityEngine.Random.Range(-0.05f,0f);
+						randomZ = -2.2f;
+						forceMultiplier = UnityEngine.Random.Range(210f,230f);
 						break;
 					case "Yorker":
-						forceMultiplier = UnityEngine.Random.Range(250f,270f);
-						randomY = UnityEngine.Random.Range(0.01f,0.05f);
+						forceMultiplier = UnityEngine.Random.Range(230f,260f);
+						randomY = 0.1f;
+						randomZ = -2f;
 						break;
 					case "Bouncer":
-						forceMultiplier = 500f;
-						randomY = UnityEngine.Random.Range(-0.35f,-0.3f);
+						forceMultiplier = 480f;
+						randomY = -0.25f;
 						randomZ = -1f;
 						bouncerCount = vm.GetBouncerCount();
 						vm.SetBouncerCount(++bouncerCount);
@@ -88,10 +90,10 @@ public class BallLauncher : MonoBehaviour {
 					}
 				} else {
 					ball.AddComponent<SpinBall>();
-					randomX = UnityEngine.Random.Range(-0.08f,0.08f);
+					randomX = UnityEngine.Random.Range(-0.02f,0.04f);
 					randomY = UnityEngine.Random.Range(0.12f,0.15f);
 					randomZ = -1f;
-					forceMultiplier = 300f;
+					forceMultiplier = UnityEngine.Random.Range(300f,320f);
 				}
 				ballCount = vm.GetBallCount();
 				vm.SetBallCount(++ballCount);

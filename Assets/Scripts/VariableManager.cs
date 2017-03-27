@@ -14,6 +14,7 @@ public class VariableManager : MonoBehaviour {
 		ballCount = 0;
 		bouncerCount = 0;
 		playFireworks = false;
+		fastBowling = false;
 	}
 
 
