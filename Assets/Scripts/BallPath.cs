@@ -29,7 +29,14 @@ public class BallPath : MonoBehaviour {
 
 			audio.Play ();
 
+		
 			vm.SetBatHit (true);
+
+
+			ContactPoint contact = other.contacts[0];
+			GameObject temp = Instantiate (Resources.Load ("Prefabs/Transparent Ball"), contact.point, new Quaternion (0f, 0f, 0f, 0f)) as GameObject;
+			temp.name = "Transparent Ball";
+			temp.transform.SetParent (GameObject.Find ("Cricket Bat Right").transform);
 
 			controller.hapticFeedbackFlag = true;
 			velocity = controller.velocity;
