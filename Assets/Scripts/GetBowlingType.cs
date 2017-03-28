@@ -39,7 +39,7 @@ public class GetBowlingType : MonoBehaviour {
 		bm.SetFastSpinBowling (fastSpinFlag);
 
 
-		SceneManager.LoadScene ("Main@2x");
+		SceneManager.LoadScene ("Scene Selector");
 	
 	}
 }

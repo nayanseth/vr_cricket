@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameObjectManager : MonoBehaviour {
 
 	public bool destroyMe;
-
+	GameObject temp;
 	void Start () {
 		destroyMe = false;
 	}
@@ -20,9 +20,15 @@ public class GameObjectManager : MonoBehaviour {
 
 	IEnumerator PlaceStumps() {
 		yield return new WaitForSeconds (3f);
-		DestroyImmediate (GameObject.Find("Stumps"));
 
-		GameObject temp = Instantiate (Resources.Load ("Prefabs/Stumps")) as GameObject;
+
+		if (SceneManager.GetActiveScene ().name == "Main@2x") {
+			DestroyImmediate (GameObject.Find("Stumps"));
+			temp = Instantiate (Resources.Load ("Prefabs/Stumps")) as GameObject;
+		} else {
+			DestroyImmediate (GameObject.Find("Stumps@1x"));
+			temp = Instantiate (Resources.Load ("Prefabs/Stumps@1x")) as GameObject;
+		}
 		temp.name = "Stumps";
 		temp.transform.SetParent (GameObject.Find("Pitch").transform);
 	}

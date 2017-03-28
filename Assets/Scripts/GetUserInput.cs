@@ -11,6 +11,7 @@ public class GetUserInput : MonoBehaviour {
 	Laser l;
 	string sceneName;
 	GetBowlingType bowling;
+	GetScene scene;
 	// Use this for initialization
 	void Start () {
 		
@@ -32,6 +33,10 @@ public class GetUserInput : MonoBehaviour {
 				} else if(sceneName=="Bowling Info") {
 					bowling = GameObject.Find ("Bowling Manager").GetComponent<GetBowlingType> ();
 					bowling.GetBowling(target);
+					device.TriggerHapticPulse(3000);
+				} else if(sceneName == "Scene Selector") {
+					scene = GameObject.Find ("Scene Manager").GetComponent<GetScene> ();
+					scene.SetScene(target);
 					device.TriggerHapticPulse(3000);
 				}
 			}
