@@ -33,10 +33,12 @@ public class BallManager : MonoBehaviour {
 			} else {
 				vm.SetPlayFireworksFlag (true);
 				score += 5;
+
 			}
 
 			vm.SetScoreCount (score);
 			tm.SetScoreText (score.ToString ());
+			tm.SetNRRText(vm.GetNRR().ToString());
 			tm.SetCommentaryText (commentary[UnityEngine.Random.Range(0,commentary.Length)]);
 		}
 	}

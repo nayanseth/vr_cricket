@@ -84,14 +84,11 @@ public class VariableManager : MonoBehaviour {
 
 	public float GetNRR() {
 		
-		float remainingBalls = (float)(6-(ballCount % 6));
-		//print (remainingBalls);
+		/*float remainingBalls = (float)(6-(ballCount % 6));
 		float newBallCount = ballCount + remainingBalls;
-		//print (newBallCount);
-		float expectedRuns = ((float)(score*newBallCount)) / ballCount;
-		//print (expectedRuns);
-		nrr = expectedRuns / (newBallCount / 6);
-		//print (nrr);
+		float expectedRuns = ((float)(score*newBallCount)) / ballCount;*/
+		nrr = ((float)score/ballCount)* 6;
+
 		return nrr;
 	}
 

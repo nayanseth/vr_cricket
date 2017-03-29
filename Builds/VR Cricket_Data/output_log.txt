@@ -1,0 +1,362 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   21.21.13.7878
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll (this message is harmless)
+Loading C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\UnityEngine.VR.dll into Unity Child Domain
+- Completed reload, in  0.026 seconds
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\nayan\Documents\GitHub\VR-Cricket\Builds\VR Cricket_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+OpenVR initialized!
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x01114088 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0111450A (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x011087EA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x01105DF5 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00B3628B (VR Cricket) 
+0x0118B21C (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename:  Line: 381)
+
+UnloadTime: 0.458813 ms
+Connected to lighthouse:LHR-4F761179
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A7D319 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x05A7D1D9 (Mono JIT Code) UnityEngine.Debug:Log (object)
+0x05A7903A (Mono JIT Code) SteamVR:.ctor ()
+0x05A78C51 (Mono JIT Code) SteamVR:CreateInstance ()
+0x05A78A82 (Mono JIT Code) SteamVR:get_instance ()
+0x05A779D3 (Mono JIT Code) SteamVR_Render:OnEnable ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FD6D (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5E2D1 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D6FE62 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D70071 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00CAF22A (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB00E2 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0DBA (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00C837FF (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A8F662 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+0x05A8F5C9 (Mono JIT Code) UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+0x05A8F428 (Mono JIT Code) UnityEngine.Transform:set_parent (UnityEngine.Transform)
+0x05A8B177 (Mono JIT Code) SteamVR_Camera:OnEnable ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FD6D (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5E2D1 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D6FE62 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D70071 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00CAF22A (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB00E2 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0DBA (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00C837FF (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 22bc -> priority: 1 
+Trying to connect to controller
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A7D319 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x05A7D1D9 (Mono JIT Code) UnityEngine.Debug:Log (object)
+0x05AA79D9 (Mono JIT Code) UnityEngine.MonoBehaviour:print (object)
+0x05AA7903 (Mono JIT Code) GetUserInput:Update ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5F991 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C83987 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.797080 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A8F662 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+0x05A8F5C9 (Mono JIT Code) UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+0x05A8F428 (Mono JIT Code) UnityEngine.Transform:set_parent (UnityEngine.Transform)
+0x05A8B177 (Mono JIT Code) SteamVR_Camera:OnEnable ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FD6D (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5E2D1 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D6FE62 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D70071 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00CAF22A (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB00D9 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0CDA (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0D68 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00C837FF (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 620.
+Total: 0.367634 ms (FindLiveObjects: 0.032146 ms CreateObjectMapping: 0.020456 ms MarkObjects: 0.298959 ms  DeleteObjects: 0.015780 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.570447 ms
+Parent of RectTransform is being set with parent property. Consider using the SetParent method instead, with the worldPositionStays argument set to false. This will retain local orientation and scale rather than world orientation and scale, which can prevent common UI scaling issues.
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A8F662 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+0x05A8F5C9 (Mono JIT Code) UnityEngine.Debug:LogWarning (object,UnityEngine.Object)
+0x05A8F428 (Mono JIT Code) UnityEngine.Transform:set_parent (UnityEngine.Transform)
+0x05A8B177 (Mono JIT Code) SteamVR_Camera:OnEnable ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FD6D (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5E2D1 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D6FE62 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D70071 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00CAF22A (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB00D9 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0CDA (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00CB0D68 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x00C837FF (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 625.
+Total: 0.332566 ms (FindLiveObjects: 0.031269 ms CreateObjectMapping: 0.019579 ms MarkObjects: 0.266812 ms  DeleteObjects: 0.014611 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.396274 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 976.
+Total: 0.604347 ms (FindLiveObjects: 0.041497 ms CreateObjectMapping: 0.022502 ms MarkObjects: 0.308895 ms  DeleteObjects: 0.230575 ms)
+
+
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A7D319 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x05A7D1D9 (Mono JIT Code) UnityEngine.Debug:Log (object)
+0x05AA79D9 (Mono JIT Code) UnityEngine.MonoBehaviour:print (object)
+0x05AAF2A3 (Mono JIT Code) NameManager:Start ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5F1B1 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5F515 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FBC0 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00B8BFE7 (VR Cricket) 
+0x00C82220 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Trying to connnect to controller!
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A7D319 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x05A7D1D9 (Mono JIT Code) UnityEngine.Debug:Log (object)
+0x05AA79D9 (Mono JIT Code) UnityEngine.MonoBehaviour:print (object)
+0x05AB0029 (Mono JIT Code) BallLauncher1x:FixedUpdate ()
+0x05A6B641 (Mono JIT Code) (wrapper runtime-invoke) object:runtime_invoke_void__this__ (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5DC5E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5FA11 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C838CE (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Got Called
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x00DA293B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x05A7D4B5 (Mono JIT Code) (wrapper managed-to-native) UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,string,UnityEngine.Object)
+0x05A7D456 (Mono JIT Code) UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+0x05A7D319 (Mono JIT Code) UnityEngine.Logger:Log (UnityEngine.LogType,object)
+0x05A7D1D9 (Mono JIT Code) UnityEngine.Debug:Log (object)
+0x05AA79D9 (Mono JIT Code) UnityEngine.MonoBehaviour:print (object)
+0x05AB06FF (Mono JIT Code) SetBowlingText:SetText ()
+0x05AAF711 (Mono JIT Code) SetBowling/<WaitAndSetText>c__Iterator0:MoveNext ()
+0x05A77C5F (Mono JIT Code) UnityEngine.SetupCoroutine:InvokeMoveNext (System.Collections.IEnumerator,intptr)
+0x05A77D04 (Mono JIT Code) (wrapper runtime-invoke) <Module>:runtime_invoke_void_object_intptr (object,intptr,intptr,intptr)
+0x100F172A (mono) mono_set_defaults
+0x1005D839 (mono) mono_runtime_invoke
+0x00D3F41E (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D66CAA (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5BE4D (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5C053 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D5C118 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00B8BFE7 (VR Cricket) 
+0x00C82290 (VR Cricket) physx::shdfnd::TempAllocator::`default constructor closure'
+0x0118B3B7 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0122AB38 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x012633F8 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+OpenVR Shutdown
+0x01178C1B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x0117A35B (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00D9C3D4 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x00C5BB32 (VR Cricket) 
+0x00C5BE1A (VR Cricket) 
+0x011128C2 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x01107553 (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x011E7F10 (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x011E88EE (VR Cricket) physx::shdfnd::ErrorHandler::getErrorCallback
+0x00CF84FF (VR Cricket) physx::shdfnd::Foundation::getPAUtils
+0x762162C4 (KERNEL32) BaseThreadInitThunk
+0x77840FD9 (ntdll) RtlSubscribeWnfStateChangeNotification
+0x77840FA4 (ntdll) RtlSubscribeWnfStateChangeNotification
+ 
+(Filename:  Line: 815)
+

@@ -25,11 +25,13 @@ public class GameObjectManager : MonoBehaviour {
 		if (SceneManager.GetActiveScene ().name == "Main@2x") {
 			DestroyImmediate (GameObject.Find("Stumps"));
 			temp = Instantiate (Resources.Load ("Prefabs/Stumps")) as GameObject;
+			temp.name = "Stumps";
 		} else {
 			DestroyImmediate (GameObject.Find("Stumps@1x"));
 			temp = Instantiate (Resources.Load ("Prefabs/Stumps@1x")) as GameObject;
+			temp.name = "Stumps@1x";
 		}
-		temp.name = "Stumps";
+
 		temp.transform.SetParent (GameObject.Find("Pitch").transform);
 	}
 }
